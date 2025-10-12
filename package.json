@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "cd dream-glow-form && npm ci && npx vite build",
-    "build-client": "cd dream-glow-form && npm ci && npm run build"
+    "build": "npm run build-client",
+    "build-client": "cd dream-glow-form && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
