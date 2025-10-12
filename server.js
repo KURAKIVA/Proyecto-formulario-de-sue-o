@@ -43,9 +43,9 @@ app.post("/api/registrar", async (req, res) => {
 });
 
 // Servir frontend
-app.use(express.static(path.join(__dirname, "client", "dist")));
+app.use(express.static(path.join(__dirname, "dream-glow-form", "dist")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "dream-glow-form", "dist", "index.html"));
 });
 
 // Iniciar servidor
